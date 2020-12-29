@@ -7,6 +7,7 @@ void main() {
   runApp(new MaterialApp(
     title: "Ymgk Proje",
     home: LandingScreen(),
+    debugShowCheckedModeBanner: false,
   ));
 }
 
