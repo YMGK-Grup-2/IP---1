@@ -281,7 +281,7 @@ class _LandingScreenState extends State<LandingScreen> {
       var request = http.MultipartRequest(
           'POST', Uri.parse('http://webmenudemo.online/api/File/Upload'));
       request.files.add(mpFile);
-
+ 
       request.send().then((response) {
         if (response.statusCode == 200) {
           response.stream.bytesToString().then((value) {
